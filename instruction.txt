@@ -1,0 +1,59 @@
+app folder: frontent/client code
+server folder: backend code
+
+cd project-4 create vite project: app
+cd app, run- npm install to install the dependency packages
+npm run dev
+
+cd ../server (taken server folder from git)
+npm install
+npm run server
+
+we can use npm start as well(script in package will run)
+run localhost:port on browser to see the output
+
+used styled components, so install "npm install styled-components" in app
+
+import styled from "styled-components"; in app.jsx
+
+import { createGlobalStyle } from 'styled-components' in main.jsx to apply style for all elements *{}, body
+
+in calc(100vh - 210px) put space between +, -
+
+fetch call to fetch the result of server from BASE_URL.
+
+useState to set that result in setData
+useState to show error. setError
+useState to track the loading
+
+
+
+optional chaining in search result to get the data props(error was Cannot read properties of null(reading map) so optional chaining    )
+
+destructuring inside map { name, image, text, price } can use (food) then food.name, food.text etc....
+use return for map if used =>{} or =>() to keep code inside and without return keyword.
+
+foodcard css effect copied from figma (inspect)
+
+useState filteredData to pass the search result or filtered data
+
+useState slectedbtn to show data for selected btn
+
+filterfood function to give result on button click category.
+
+to avoid multiple buttons. create array of buttons and use map function.
+
+create some css effect on selected button, useState - slectedbtn
+background-color: ${({isSelected}) => (isSelected? "#f22f2f" : "#FF4343" )};
+    outline: ${({isSelected})=> (isSelected? "white": "#FF4343" )}
+    
+    we can pass it as prop as well here.
+
+
+
+    vercel deployment:
+
+    1. deploy app server separately.
+
+    include vercel.json in server code in same level as index.js
+

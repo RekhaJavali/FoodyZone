@@ -1,0 +1,95 @@
+/* * {
+ box-sizing: border-box;
+} */
+/* 
+*{
+    margin:0;
+} */
+
+.topSection {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:140px;
+    
+}
+
+.top1level{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.search {
+    background-color: black;
+    color:white;
+    border-color: #FF0909;
+}
+
+.toplist{
+    list-style: none;
+    
+    display:flex;
+    gap:14px;
+}
+
+.topListItem {
+    background-color:#FF4343;
+    color:white;
+    padding:12px 6px;
+    border-radius: 5px;
+
+}
+
+
+/* main body */
+.bodysection {
+    background-image: url("bg.png");
+    background-size: cover;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+    /* height: calc(100vh - 150px); */
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.fooditem{
+    padding:20px;
+    display: flex;
+    border-radius:19.45px ;
+    background-image: radial-gradient(#EABFFF 100%, #8726B7 0%, #98F9FF 100%, #FFFFFF 0%);
+    /* /* justify-content: center; */
+    align-items: center; 
+    width:340px;
+    height: 167px;
+    position: relative;
+}
+
+.foodimage {
+    border-radius: 50%;
+    height:133px;
+    width:133px;
+}
+
+.fooddata{
+    color:white;
+}
+
+.fooddata h3 {
+    margin:0 0 10px 0;
+}
+
+.foodprice {
+    background-color:#FF4343 ;
+    color:white;
+    border-radius: 5px;
+    padding:4px 6px; 
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+}
